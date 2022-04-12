@@ -1,5 +1,5 @@
-[submodule "/home/wg/.tmux/plugins/tpm"]
-	path = /home/wg/.tmux/plugins/tpm
+[submodule ".tmux/plugins/tpm"]
+	path = .tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
 [submodule ".vim/pack/tpope/start"]
 	path = .vim/pack/tpope/start
