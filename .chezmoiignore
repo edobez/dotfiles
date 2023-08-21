@@ -1,0 +1,4 @@
+# List here the ignored dotfiles for work machine
+{{- if eq .machine_type "work" }}
+.gitconfig
+{{- end}}
