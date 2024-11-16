@@ -1,0 +1,13 @@
+# see https://github.com/sigoden/aichat/blob/main/config.example.yaml
+
+keybindings: vi
+editor: vim
+model: claude:claude-3-5-haiku-20241022
+rag_reranker_model: voyageai:rerank-2
+clients:
+- type: claude
+  api_key: {{ (bitwardenFields "item" "69b76e4d-0d04-4e00-94e6-b22a015269ab").key.value }}
+- type: openai-compatible
+  name: voyageai
+  api_base: https://api.voyageai.com/v1
+  api_key: {{ (bitwardenFields "item" "4dcd582a-5bba-4c96-8499-b22a015a124f").key.value }}
