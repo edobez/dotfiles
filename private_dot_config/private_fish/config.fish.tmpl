@@ -14,4 +14,10 @@ pyenv init - | source
 
 # Added by LM Studio CLI (lms)
 set -gx PATH $PATH /Users/edoardo/.cache/lm-studio/bin
+
+# Add aichat keybinding
+{{ if .config.use_aichat -}}
+bind \ee _aichat_inline
+{{- end }}
+
 {{- end }}
