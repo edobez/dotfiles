@@ -1,0 +1,17 @@
+if status is-interactive
+    # Commands to run in interactive sessions can go here
+end
+set -x LANG en_US.UTF-8
+set -x LC_CTYPE en_US.UTF-8
+set -x LC_ALL en_US.UTF-8
+
+{{ if and .config.is_macos .config.is_primary -}}
+# Created by `pipx` on 2021-12-01 17:46:44
+set PATH $PATH /Users/edoardo/.local/bin
+
+# pyenv setup
+pyenv init - | source
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/edoardo/.cache/lm-studio/bin
+{{- end }}
